@@ -7,7 +7,7 @@
     "type": "REST",
     "lang": {
        "en-US": {
-           "name": "Promo Load",
+           "name": "Load Promo",
            "description": "Load customers into TBS promo codes",
            "TwilioMessage":"test"
        }
