@@ -1,7 +1,7 @@
 {
-  "name": "twilio-journey-builder-example", 
+  "name": "journey-builder", 
   "version": "1.0.0",
-  "description": "Journey Builder Activity Template",
+  "description": "Journey Builder Activity",
   "engines": {
     "node": "6.11.1"
   },
@@ -10,22 +10,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jmaitz/twilio-sfmc.git"
+    "url": "git+https://github.com/leemt0588/promo-engine.git"
   },
   "keywords": [
-    "twilio",
-    "twilio salesforce marketing cloud",
+    "salesforce marketing cloud",
     "journey",
     "builder",
     "salesforce marketing cloud",
     "heroku"
   ],
-  "author": "John Maitz",
+  "author": "Lee Titchener",
   "license": "",
   "bugs": {
-    "url": "https://github.com/jmaitz/twilio-sfmc/issues"
+    "url": "https://github.com/leemt0588/promo-engine/issues"
   },
-  "homepage": "https://github.com/jmaitz/twilio-sfmc#readme",
+  "homepage": "https://github.com/leemt0588/promo-engine#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "bower": "^1.8.0",
@@ -34,7 +33,6 @@
     "jsonwebtoken": "^8.0.1",
     "request": "^2.81.0",
     "require": "^2.4.20",
-    "twilio": "^3.36.0",
     "uglify-js": "^3.6.4"
   }
 } 
