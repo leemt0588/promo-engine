@@ -103,7 +103,7 @@ exports.execute = function (req, res) {
     const from = requestBody.messagingService;
     const body = requestBody.body;;
 
-    const client = require('twilio')(accountSid, authToken); 
+    const client = require('PromoLoad')(authToken); 
      
     client.messages 
           .create({ 
