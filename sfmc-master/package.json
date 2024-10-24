@@ -1,7 +1,7 @@
 {
-  "name": "twilio-journey-builder-example", 
+  "name": "loadpromo", 
   "version": "1.0.0",
-  "description": "Journey Builder Activity Template",
+  "description": "Load customers into TBS Promo Codes",
   "engines": {
     "node": "6.11.1"
   },
@@ -18,7 +18,7 @@
     "salesforce marketing cloud",
     "heroku"
   ],
-  "author": "John Maitz",
+  "author": "Lee Titchener",
   "license": "",
   "bugs": {
     "url": "https://github.com/leemt0588/promo-engine/issues"
