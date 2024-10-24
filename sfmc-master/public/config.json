@@ -15,6 +15,7 @@
         "execute": {
             "inArguments": [
                 {
+                  "contactKey": "{{Contact.Key}}",
                   "email": "{{Contact.Default.EmailAddress}}",
                   "ClientID": "{{Contact.Attribute.Master Data.ClientID}}" 
                 }               
