@@ -8,8 +8,7 @@
     "lang": {
        "en-US": {
            "name": "Load Promo",
-           "description": "Load customers into TBS Promo Codes with Journey Builder",
-           "TwilioMessage":"test"
+           "description": "Load customers into TBS Promo Codes with Journey Builder"
        }
     },
     "arguments": {
@@ -30,7 +29,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "e962d1d4-8b07-4e76-89be-ecd1f1423b6d",
+      "applicationExtensionKey": "515eb74c-6d91-4760-9b9d-137ff3c81b20",
        "save": {
            "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/save",
             "verb": "POST",
@@ -65,7 +64,7 @@
        }
     },
     "wizardSteps": [
-       { "label": "Create SMS Message", "key": "step1" }
+       { "label": "Load Promo", "key": "step1" }
     ],
     "userInterfaces": {
        "configModal": {
@@ -79,33 +78,13 @@
             "execute": {
                 "inArguments": [
                     {
-                        "accountSid": {
-                            "dataType": "String",
-                            "isNullable": false,
-                            "direction": "out"   
-                        }
-                    },                    
-                    {
                         "authToken": {
                             "dataType": "String",
                             "isNullable": false,
                             "direction": "out"   
                         }
                     },                    
-                    {
-                        "from": {
-                            "dataType": "Phone",
-                            "isNullable": true,
-                            "direction": "out"   
-                        }
-                    },                    
-                    {
-                        "to": {
-                            "dataType": "Phone",
-                            "isNullable": false,
-                            "direction": "out"   
-                        }
-                    },
+             
                     {
                         "body": {
                             "dataType": "String",
@@ -114,9 +93,9 @@
                         }
                     },                    
                     {
-                        "email": {
-                            "dataType": "Email",
-                            "isNullable": true,
+                        "ClientID": {
+                            "dataType": "String",
+                            "isNullable": false,
                             "direction": "out"
                         }
                     }
