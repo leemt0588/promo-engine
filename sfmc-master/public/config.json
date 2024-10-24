@@ -1,7 +1,7 @@
 {
     "workflowApiVersion": "1.1",
     "metaData": {
-       "icon": "https://github.com/leemt0588/promo-engine/blob/main/sfmc-master/public/images/logos.png",
+       "icon": "https://github.com/leemt0588/promo-engine/blob/main/sfmc-master/images/logos.png",
        "category": "customer updates"
     },
     "type": "REST",
