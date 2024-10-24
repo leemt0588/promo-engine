@@ -1,8 +1,8 @@
 {
     "workflowApiVersion": "1.1",
     "metaData": {
-       "icon": "images/iconSmall.png",
-       "category": "message"
+       "icon": "images/iconbetrSmall.png",
+       "category": "customer updates"
     },
     "type": "REST",
     "lang": {
