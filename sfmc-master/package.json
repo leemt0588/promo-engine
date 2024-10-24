@@ -10,11 +10,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jmaitz/twilio-sfmc.git"
+    "url": "git+https://github.com/leemt0588/promo-engine.git"
   },
   "keywords": [
-    "twilio",
-    "twilio salesforce marketing cloud",
     "journey",
     "builder",
     "salesforce marketing cloud",
@@ -23,9 +21,9 @@
   "author": "John Maitz",
   "license": "",
   "bugs": {
-    "url": "https://github.com/jmaitz/twilio-sfmc/issues"
+    "url": "https://github.com/leemt0588/promo-engine/issues"
   },
-  "homepage": "https://github.com/jmaitz/twilio-sfmc#readme",
+  "homepage": "https://github.com/leemt0588/promo-engine#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "bower": "^1.8.0",
