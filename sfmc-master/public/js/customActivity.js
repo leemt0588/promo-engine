@@ -9,7 +9,7 @@ define([
     var payload = {};
     var lastStepEnabled = false;
     var steps = [ // initialize to the same value as what's set in config.json for consistency
-        { "label": "Create SMS Message", "key": "step1" }
+        { "label": "Promo Load", "key": "step1" }
     ];
     var currentStep = steps[0].key;
 
@@ -50,16 +50,8 @@ define([
         $.each(inArguments, function (index, inArgument) {
             $.each(inArgument, function (key, val) {
 
-                if (key === 'accountSid') {
-                    $('#accountSID').val(val);
-                }
-
                 if (key === 'authToken') {
                     $('#authToken').val(val);
-                }
-
-                if (key === 'messagingService') {
-                    $('#messagingService').val(val);
                 }
 
                 if (key === 'body') {
@@ -90,17 +82,13 @@ define([
 
     function save() {
 
-        var accountSid = $('#accountSID').val();
         var authToken = $('#authToken').val();
-        var messagingService = $('#messagingService').val();
         var body = $('#messageBody').val();
 
         payload['arguments'].execute.inArguments = [{
-            "accountSid": accountSid,
             "authToken": authToken,
-            "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.Attribute.TwilioV1.TwilioNumber}}" //<----This should map to your data extension name and phone number column
+            "to": "{{Contact.Attribute.Master Data.ClientID}}" //<----This should map to your data extension name and ClientID column
         }];
 
         payload['metaData'].isConfigured = true;
