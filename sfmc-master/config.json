@@ -7,7 +7,7 @@
     "type": "REST",
     "lang": {
        "en-US": {
-           "name": "Twilio SMS",
+           "name": "Promo Load",
            "description": "Send Twilio SMS with Journey Builder",
            "TwilioMessage":"test"
        }
