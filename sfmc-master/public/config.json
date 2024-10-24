@@ -16,7 +16,7 @@
             "inArguments": [
                 {
                   "email": "{{Contact.Default.EmailAddress}}",
-                  "to": "{{Contact.Attribute.TwilioV1.TwilioNumber}}" 
+                  "ClientID": "{{Contact.Attribute.Master Data.ClientID}}" 
                 }               
             ],
             "outArguments": [],
