@@ -17,7 +17,7 @@
             "inArguments": [
                 {
                   "email": "{{Contact.Default.EmailAddress}}",
-                  "to": "{{Contact.Attribute.TwilioV1.TwilioNumber}}" 
+              "ClientID": "{{Contact.Default.EmailAddress}}",
                 }               
             ],
             "outArguments": [],
@@ -78,13 +78,7 @@
         "arguments": {
             "execute": {
                 "inArguments": [
-                    {
-                        "accountSid": {
-                            "dataType": "String",
-                            "isNullable": false,
-                            "direction": "out"   
-                        }
-                    },                    
+                           
                     {
                         "authToken": {
                             "dataType": "String",
@@ -92,21 +86,8 @@
                             "direction": "out"   
                         }
                     },                    
-                    {
-                        "from": {
-                            "dataType": "Phone",
-                            "isNullable": true,
-                            "direction": "out"   
-                        }
-                    },                    
-                    {
-                        "to": {
-                            "dataType": "Phone",
-                            "isNullable": false,
-                            "direction": "out"   
-                        }
-                    },
-                    {
+                                
+                                      {
                         "body": {
                             "dataType": "String",
                             "isNullable": false,
