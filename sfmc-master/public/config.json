@@ -1,23 +1,21 @@
 {
     "workflowApiVersion": "1.1",
     "metaData": {
-       "icon": "images/iconSmall.png",
+       "icon": "images/logos.png",
        "category": "message"
     },
     "type": "REST",
     "lang": {
        "en-US": {
            "name": "Promo",
-           "description": "Send Twilio SMS with Journey Builder",
-           "TwilioMessage":"test"
+           "description": "Load customers into TBS Promo Codes"
        }
     },
     "arguments": {
         "execute": {
             "inArguments": [
                 {
-                  "email": "{{Contact.Default.EmailAddress}}",
-                  "to": "{{Contact.Attribute.TwilioV1.TwilioNumber}}" 
+                  "email": "{{Contact.Default.EmailAddress}}"
                 }               
             ],
             "outArguments": [],
@@ -65,7 +63,7 @@
        }
     },
     "wizardSteps": [
-       { "label": "Create SMS Message", "key": "step1" }
+       { "label": "Load Promo", "key": "step1" }
     ],
     "userInterfaces": {
        "configModal": {
@@ -78,13 +76,7 @@
         "arguments": {
             "execute": {
                 "inArguments": [
-                    {
-                        "accountSid": {
-                            "dataType": "String",
-                            "isNullable": false,
-                            "direction": "out"   
-                        }
-                    },                    
+                   
                     {
                         "authToken": {
                             "dataType": "String",
@@ -92,20 +84,8 @@
                             "direction": "out"   
                         }
                     },                    
-                    {
-                        "from": {
-                            "dataType": "Phone",
-                            "isNullable": true,
-                            "direction": "out"   
-                        }
-                    },                    
-                    {
-                        "to": {
-                            "dataType": "Phone",
-                            "isNullable": false,
-                            "direction": "out"   
-                        }
-                    },
+                   
+   
                     {
                         "body": {
                             "dataType": "String",
