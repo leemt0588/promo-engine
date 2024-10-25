@@ -7,7 +7,7 @@
     "type": "REST",
     "lang": {
        "en-US": {
-           "name": "Load Promo",
+           "name": "loadpromo",
            "description": "Load customers into TBS Promo Codes with Journey Builder"
        }
     },
