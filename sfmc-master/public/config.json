@@ -9,21 +9,21 @@
        "en-US": {
            "name": "loadpromo",
            "description": "Load customers into TBS Promo Codes with Journey Builder"
+            "step1Label": "Configure"
        }
     },
     "arguments": {
         "execute": {
             "inArguments": [
                 {
-                  "contactKey": "{{Contact.Key}}",
-                  "email": "{{Contact.Default.EmailAddress}}",
-                  "ClientID": "{{Contact.Attribute.Master Data.ClientID}}" 
+                  "email": "{{Contact.Default.EmailAddress}}"
                 }               
             ],
             "outArguments": [],
             "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/journeybuilder/execute",
             "verb": "POST",
             "body": "",
+            "header": "",
             "format": "json",
             "useJwt": false,
             "timeout": 2000
@@ -32,35 +32,35 @@
     "configurationArguments": {
       "applicationExtensionKey": "515eb74c-6d91-4760-9b9d-137ff3c81b20",
        "save": {
-           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/save",
+           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/journeybuilder/save",
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": false,
+            "useJwt": true,
             "timeout": 2000
        },
        "publish": {
-           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/publish",
+           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/journeybuilder/publish",
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": false,
+            "useJwt": true,
             "timeout": 2000
        },
        "validate": {
-           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/validate",
+           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/journeybuilder/validate",
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": false,
+            "useJwt": true,
             "timeout": 2000
        },
        "stop": {
-           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/stop",
+           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/journeybuilder/stop",
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": false,
+            "useJwt": true,
             "timeout": 2000
        }
     },
