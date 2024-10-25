@@ -23,7 +23,6 @@
             "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/execute",
             "verb": "POST",
             "body": "",
-            "header": "",
             "format": "json",
             "useJwt": false,
             "timeout": 2000
