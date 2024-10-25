@@ -9,7 +9,6 @@
        "en-US": {
            "name": "Load Promo",
            "description": "Load customers into TBS Promo Codes with Journey Builder"
-            "step1Label": "Configure"
        }
     },
     "arguments": {
@@ -29,13 +28,13 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "515eb74c-6d91-4760-9b9d-137ff3c81b20",
+      "applicationExtensionKey": "4051b5b5-b78d-4a71-84d5-80dd3f45bc6d",
        "save": {
            "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/save",
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": true,
+            "useJwt": false,
             "timeout": 2000
        },
        "publish": {
@@ -43,7 +42,7 @@
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": true,
+            "useJwt": false,
             "timeout": 2000
        },
        "validate": {
@@ -51,7 +50,7 @@
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": true,
+            "useJwt": false,
             "timeout": 2000
        },
        "stop": {
@@ -59,7 +58,7 @@
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": true,
+            "useJwt": false,
             "timeout": 2000
        }
     },
