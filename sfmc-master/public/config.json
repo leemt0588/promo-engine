@@ -7,7 +7,7 @@
     "type": "REST",
     "lang": {
        "en-US": {
-           "name": "loadpromo",
+           "name": "Load Promo",
            "description": "Load customers into TBS Promo Codes with Journey Builder"
             "step1Label": "Configure"
        }
@@ -16,11 +16,11 @@
         "execute": {
             "inArguments": [
                 {
-                  "email": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
+                  "email": "{{Contact.Default.EmailAddress}}"
                 }               
             ],
             "outArguments": [],
-            "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/journeybuilder/execute",
+            "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/execute",
             "verb": "POST",
             "body": "",
             "header": "",
@@ -32,7 +32,7 @@
     "configurationArguments": {
       "applicationExtensionKey": "515eb74c-6d91-4760-9b9d-137ff3c81b20",
        "save": {
-           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/journeybuilder/save",
+           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/save",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -40,7 +40,7 @@
             "timeout": 2000
        },
        "publish": {
-           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/journeybuilder/publish",
+           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/publish",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -48,7 +48,7 @@
             "timeout": 2000
        },
        "validate": {
-           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/journeybuilder/validate",
+           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/validate",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -56,7 +56,7 @@
             "timeout": 2000
        },
        "stop": {
-           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/journeybuilder/stop",
+           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/stop",
             "verb": "POST",
             "body": "",
             "format": "json",
