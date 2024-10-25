@@ -1,5 +1,5 @@
 {
-  "name": "Load Promo", 
+  "name": "promo", 
   "version": "1.0.0",
   "description": "Load customers into TBS Promo Codes",
   "engines": {
