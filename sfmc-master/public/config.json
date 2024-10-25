@@ -7,7 +7,7 @@
     "type": "REST",
     "lang": {
        "en-US": {
-           "name": "loadpromo",
+           "name": "promo",
            "description": "Load customers into TBS Promo Codes"
        }
     },
