@@ -88,7 +88,7 @@ define([
         payload['arguments'].execute.inArguments = [{
             "authToken": authToken,
             "body": body,
-            "to": "{{Contact.Attribute.Master Data.ClientID}}" //<----This should map to your data extension name and ClientID column
+            "to": "{{Contact.Attribute.CRMWheelTest.ClientID}}" //<----This should map to your data extension name and ClientID column
         }];
 
         payload['metaData'].isConfigured = true;
