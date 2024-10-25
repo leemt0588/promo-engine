@@ -2,7 +2,7 @@
     "workflowApiVersion": "1.1",
     "metaData": {
        "icon": "images/logos.png",
-       "category": "message"
+       "category": "custom updates"
     },
     "type": "REST",
     "lang": {
@@ -15,7 +15,7 @@
         "execute": {
             "inArguments": [
                 {
-                  "email": "{{Contact.Default.EmailAddress}}"
+                  "email": "{{Contact.Attribute.CRMWheelTest.ClientID}}"
                 }               
             ],
             "outArguments": [],
@@ -28,7 +28,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "4051b5b5-b78d-4a71-84d5-80dd3f45bc6d",
+      "applicationExtensionKey": "515eb74c-6d91-4760-9b9d-137ff3c81b20",
        "save": {
            "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/save",
             "verb": "POST",
