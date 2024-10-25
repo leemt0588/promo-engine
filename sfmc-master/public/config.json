@@ -16,7 +16,7 @@
         "execute": {
             "inArguments": [
                 {
-                  "email": "{{Contact.Default.EmailAddress}}"
+                  "email": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
                 }               
             ],
             "outArguments": [],
