@@ -1,98 +1,128 @@
-	
-workflowApiVersion	"1.1"
-metaData	
-icon	"images/iconSmall.png"
-category	"message"
-type	"REST"
-lang	
-en-US	
-name	"Promo"
-description	"Send Twilio SMS with Journey Builder"
-TwilioMessage	"test"
-arguments	
-execute	
-inArguments	
-0	
-email	"{{Contact.Default.EmailAddress}}"
-to	"{{Contact.Attribute.TwilioV1.TwilioNumber}}"
-outArguments	[]
-url	"https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/journeybuilder/execute"
-verb	"POST"
-body	""
-format	"json"
-useJwt	false
-timeout	2000
-configurationArguments	
-applicationExtensionKey	"4051b5b5-b78d-4a71-84d5-80dd3f45bc6d"
-save	
-url	"https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/save"
-verb	"POST"
-body	""
-format	"json"
-useJwt	false
-timeout	2000
-publish	
-url	"https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/publish"
-verb	"POST"
-body	""
-format	"json"
-useJwt	false
-timeout	2000
-validate	
-url	"https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/validate"
-verb	"POST"
-body	""
-format	"json"
-useJwt	false
-timeout	2000
-stop	
-url	"https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/stop"
-verb	"POST"
-body	""
-format	"json"
-useJwt	false
-timeout	2000
-wizardSteps	
-0	
-label	"Create SMS Message"
-key	"step1"
-userInterfaces	
-configModal	
-height	600
-width	800
-fullscreen	false
-schema	
-arguments	
-execute	
-inArguments	
-0	
-accountSid	
-dataType	"String"
-isNullable	false
-direction	"out"
-1	
-authToken	
-dataType	"String"
-isNullable	false
-direction	"out"
-2	
-from	
-dataType	"Phone"
-isNullable	true
-direction	"out"
-3	
-to	
-dataType	"Phone"
-isNullable	false
-direction	"out"
-4	
-body	
-dataType	"String"
-isNullable	false
-direction	"out"
-5	
-email	
-dataType	"Email"
-isNullable	true
-direction	"out"
-outArguments	[]
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+       "icon": "images/iconSmall.png",
+       "category": "message"
+    },
+    "type": "REST",
+    "lang": {
+       "en-US": {
+           "name": "Promo",
+           "description": "Send Twilio SMS with Journey Builder",
+           "TwilioMessage":"test"
+       }
+    },
+    "arguments": {
+        "execute": {
+            "inArguments": [
+                {
+                  "email": "{{Contact.Default.EmailAddress}}",
+                  "to": "{{Contact.Attribute.TwilioV1.TwilioNumber}}" 
+                }               
+            ],
+            "outArguments": [],
+            "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/journeybuilder/execute",
+            "verb": "POST",
+            "body": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 2000
+        }
+    },
+    "configurationArguments": {
+      "applicationExtensionKey": "4051b5b5-b78d-4a71-84d5-80dd3f45bc6d",
+       "save": {
+           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/save",
+            "verb": "POST",
+            "body": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 2000
+       },
+       "publish": {
+           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/publish",
+            "verb": "POST",
+            "body": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 2000
+       },
+       "validate": {
+           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/validate",
+            "verb": "POST",
+            "body": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 2000
+       },
+       "stop": {
+           "url": "https://promotion-engine-integration-0d3b41e5b364.herokuapp.com/stop",
+            "verb": "POST",
+            "body": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 2000
+       }
+    },
+    "wizardSteps": [
+       { "label": "Create SMS Message", "key": "step1" }
+    ],
+    "userInterfaces": {
+       "configModal": {
+           "height": 600,
+           "width": 800,
+           "fullscreen": false
+       }
+    },
+    "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [
+                    {
+                        "accountSid": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "out"   
+                        }
+                    },                    
+                    {
+                        "authToken": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "out"   
+                        }
+                    },                    
+                    {
+                        "from": {
+                            "dataType": "Phone",
+                            "isNullable": true,
+                            "direction": "out"   
+                        }
+                    },                    
+                    {
+                        "to": {
+                            "dataType": "Phone",
+                            "isNullable": false,
+                            "direction": "out"   
+                        }
+                    },
+                    {
+                        "body": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "out"   
+                        }
+                    },                    
+                    {
+                        "email": {
+                            "dataType": "Email",
+                            "isNullable": true,
+                            "direction": "out"
+                        }
+                    }
+                ],
+                "outArguments": []
+            }
+        }
+    }
+}
